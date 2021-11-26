@@ -14,7 +14,6 @@ public void draw()
  background(0);
  bob.show();
  bob.move();
- float d = dist(bob.getX(), bob.getY(), sue.get(i).getX(), sue.get(i).getY());
  for (int i = 0; i < sky.length; i++) {
  sky[i].show();
  }
