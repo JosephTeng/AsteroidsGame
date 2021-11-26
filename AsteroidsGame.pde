@@ -9,7 +9,7 @@ public void setup()
  sky[i] = new Star();
  }
  for (int j = 0; j < 20; j++) {
- bob.add(new Asteroid());
+ sue.add(new Asteroid());
  }
 }
 
