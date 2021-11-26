@@ -1,6 +1,6 @@
 Spaceship bob = new Spaceship();
 Star[] sky = new Star[200];
-ArrayList <Asteroid> nice = new ArrayList <Asteroid>();
+ArrayList <Asteroid> sue = new ArrayList <Asteroid>();
 
 public void setup() 
 {
@@ -9,21 +9,21 @@ public void setup()
  sky[i] = new Star();
  }
  for (int j = 0; j < 20; j++) {
- nice.add(new Asteroid());
+ bob.add(new Asteroid());
  }
 }
 
 public void draw() 
 {
  background(0);
- bruh.show();
- bruh.move();
- for(int i = 0; i < nice.size(); i++) {
- nice.get(i).show();
- nice.get(i).move();
- float d = dist(bruh.getX(), bruh.getY(), nice.get(i).getX(), nice.get(i).getY());
+ bob.show();
+ bob.move();
+ for(int i = 0; i < sue.size(); i++) {
+ sue.get(i).show();
+ sue.get(i).move();
+ float d = dist(bob.getX(), bob.getY(), sue.get(i).getX(), sue.get(i).getY());
  if (d < 10) {
- nice.remove(i);
+ sue.remove(i);
  }
  }
  for (int i = 0; i < sky.length; i++) {
@@ -33,14 +33,14 @@ public void draw()
 public void keyPressed()
 {
  if(key == 'a') {
- bruh.turn(-5);
+ bob.turn(-5);
  } if(key == 'd') {
- bruh.turn(5);
+ bob.turn(5);
  } if(key == 'w') {
- bruh.accelerate(0.3);
+ bob.accelerate(0.3);
  } if(key == 's') {
- bruh.accelerate(-0.3);
+ bob.accelerate(-0.3);
  } if(key == 'h') {
- bruh.hyperspace();
+ bob.hyperspace();
  }
 }
